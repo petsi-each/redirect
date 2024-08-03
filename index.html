@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0;url=https://www.petsieach.com.br">
-    <title>Redirecting...</title>
+    <title>Redirecionando para petsieach.com.br...</title>
+    <script>
+       window.location.href = window.location.href.replace("petsieach.com", "petsieach.com.br");
+    </script>
 </head>
 <body>
-    <p>Se não redirecionar, clique <a href="https://www.petsieach.com.br">aqui</a>.</p>
+    <p>Se não redirecionar automaticamente, clique <a id="clickToRedirect" href="https://www.petsieach.com.br">aqui</a>.</p>
+     <script>
+        document.getElementById("clickToRedirect").href = window.location.href.replace("petsieach.com", "petsieach.com.br");
+    </script>
 </body>
 </html>
